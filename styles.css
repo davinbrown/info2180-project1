@@ -10,6 +10,7 @@
     --skyblue: #6B7280;
     --catwhite: #E2E8F0;
     --oceangreen: #48BB78;
+    --riverbed: #4A5568;
 }
 
 body {
@@ -18,7 +19,7 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 10px auto;
     max-width: 960px;
     width: 100%;
 }
@@ -47,6 +48,8 @@ nav ul li a:hover{
     color: var(--blue) ;
 }
 
+/* verview-hero section*/
+
 .overview-hero{
     background-color: cadetblue;
 }
@@ -68,7 +71,122 @@ nav ul li a:hover{
     padding-right: 40px;
 }
 
-.learn-about {
+/* learn about section*/
+
+.learn-about h2{
+    color: var(--oceangreen);
+    font-size: 21px;
+}
+
+.learn-about .container .cards{
     display: grid;
-    grid-template-columns: 30 30 30;
+    grid-gap: 15px;
+    grid-template-columns: auto auto auto;
+}
+
+.card{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--catwhite);
+    box-shadow: 0px 10px var(--catwhite);
+}
+
+.card img{
+    width: 300px;
+    height: auto;
+}
+
+.card h3{
+    color: var(--oceangreen);
+}
+
+.testing {
+    background-color: var(--riverbed);
+    margin: 30px 0px;
+    padding: 100px;
+    color: var(--white);
+
+}
+
+.testing .container{
+    display: flex;
+    align-items: center;
+
+}
+
+.testing-desciption{
+    width: 70%;
+}
+
+.cta{
+    text-align: center;
+    width: 30%;
+}
+
+.testing .btn{
+    background-color: var(--oceangreen);
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/* stories section*/
+
+.stories h2{
+    color: var(--blue);
+    font-size: 18px;
+}
+
+article{
+    display: flex;
+    margin: 30px 0px;
+}
+
+article img {
+    height: 200px;
+    width: 200px;
+    width: 20%;
+    border-radius: 50%;
+}
+
+.article-body{
+    width: 80%;
+    margin-left: 20px;
+}
+
+.article-body h3{
+    width: 70%;
+}
+
+/* newsletter section */
+
+.newsletter{
+    padding: 30px 0px;
+    text-align: center;
+    background-color: var(--oceangreen);
+    color: var(--white);
+}
+
+.newsletter .container {
+    width: 30%;
+}
+
+.newsletter form {
+    display: inline-flex;
+}
+
+.newsletter form .btn{
+    background-color: var(--blue);
+    margin-left: 5px;
+    padding: 0px 10px;
+    border-radius: 5px;
+    border: none;
+    color: var(--white);
+}
+
+/* footer */
+
+footer{
+    background-color: var(--riverbed);
+    padding: 10px 0px;
 }
