@@ -26,6 +26,7 @@ body {
 
 header{
     width: 100%;
+    font-weight: bold;
     background-color: white;
     color: var(--skyblue);
 }
@@ -51,7 +52,7 @@ nav ul li a:hover{
 /* verview-hero section*/
 
 .overview-hero{
-    background-color: cadetblue;
+    background-color:var(--catwhite);
 }
 
 .overview-hero-text h2{
@@ -127,6 +128,7 @@ nav ul li a:hover{
     background-color: var(--oceangreen);
     border-radius: 5px;
     text-transform: uppercase;
+    color: var(--white);
     padding: 10px;
 }
 
@@ -145,7 +147,6 @@ article{
 article img {
     height: 200px;
     width: 200px;
-    width: 20%;
     border-radius: 50%;
 }
 
@@ -158,9 +159,15 @@ article img {
     width: 70%;
 }
 
+.article-body p a{
+    color: var(--blue);
+    font-weight: bold;
+}
+
+
 /* newsletter section */
 
-.newsletter{
+.newsletter {
     padding: 30px 0px;
     text-align: center;
     background-color: var(--oceangreen);
@@ -168,11 +175,17 @@ article img {
 }
 
 .newsletter .container {
-    width: 30%;
+    width: 35%;
 }
 
 .newsletter form {
     display: inline-flex;
+}
+
+.form-group input[type=email] {
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
 }
 
 .newsletter form .btn{
@@ -188,5 +201,6 @@ article img {
 
 footer{
     background-color: var(--riverbed);
+    color: var(--white);
     padding: 10px 0px;
 }
