@@ -93,7 +93,7 @@ nav ul li a:hover{
 }
 
 .card img{
-    width: 300px;
+    width: 100%;
     height: auto;
 }
 
@@ -175,7 +175,7 @@ article img {
 }
 
 .newsletter .container {
-    width: 35%;
+    width: 300px;
 }
 
 .newsletter form {
@@ -195,6 +195,11 @@ article img {
     border-radius: 5px;
     border: none;
     color: var(--white);
+    cursor: pointer;
+}
+
+.message {
+    margin: 20px 0px;
 }
 
 /* footer */
